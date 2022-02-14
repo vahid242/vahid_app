@@ -1,0 +1,32 @@
+body{
+    background-image: url(../img/princess2.jpg);
+    background-position: center; 
+    background-size: cover
+}
+    
+img{
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+/* #audio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20pc;
+} */
+
+@media only screen and (max-width: 500px) {
+    img{
+        width: 30%;
+        height: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+    }    
+}
