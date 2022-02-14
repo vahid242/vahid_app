@@ -16,4 +16,5 @@ app.get('', (req, res) =>{
     res.render('main')
 })
 
-app.listen(3000, () => console.info("listening to port 3000"))
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.info(`listening to port ${port}`))
