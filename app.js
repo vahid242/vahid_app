@@ -16,5 +16,13 @@ app.get('', (req, res) =>{
     res.render('main')
 })
 
+app.get('/about', (req, res) =>{
+    res.render('about')
+})
+
+app.get('/contact', (req, res) =>{
+    res.render('contact')
+})
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.info(`listening to port ${port}`))

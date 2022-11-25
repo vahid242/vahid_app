@@ -1,17 +1,151 @@
 body{
-    background-image: url(../img/princess2.jpg);
-    background-position: center; 
-    background-size: cover
+    background-color: #ffc300;
 }
-    
-img{
-    width: 25%;
-    height: 25%;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 6px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: "Comic Sans MS";
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111
+  }
+
+  #introduce{
+    font-family: "Comic Sans MS";
+    text-transform:uppercase;
+    font-size:4em; 
+    text-shadow:1px 2px rgba(0,0,0,0.2);
+    color:#FFF; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#introduce h1:hover{
+  color: #111;
+}
+
+#job{
+  font-size: .45em;
+  top: 70%;
+  left: 50%;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #2f4f4f;
+}
+
+#learn{
+  font-size: .35em;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 90%;
+  left: 50%;
+  border-radius: 8px;
+  border: solid white;
+  margin: .1em;
+  padding: .15em .5em;
+}
+
+/* #job:hover{
+  text-shadow: 0 0 5px black,
+              0 0 25px black,
+              0 0 50px black,
+              0 0 100px black;
+  color: black;
+} */
+
+#learn:hover{
+  background-color: white;
+  color: #ffc300;
+}
+
+/* about */
+
+#about{
+  background-color: #222;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+#pic img{
+  border-radius: 15px;
+  margin-top: 25px;
+}
+.column {
+  float: left;
+  width: 45%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* contact */
+
+#contact{
+  background-color: #02c9c9;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:950px) {
+  #introduce{
+    font-size:3em;
+  }
+
+  #pic img{
+    width: 50%;
+    height: 50%;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    margin-top: 15%;
+    margin-right: auto;  
+    border-radius: 15px;
+  }  
+  .column {
+    width: 100%;
+  }
 }
+
+@media screen and (max-width:750px) {
+  #introduce{
+    font-size:200%;
+  }
+}
+
+
 
 /* #audio{
     display: block;
@@ -20,7 +154,7 @@ img{
     margin-top: 20pc;
 } */
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 650px) {
     img{
         width: 30%;
         height: 30%;
@@ -29,4 +163,4 @@ img{
         margin-right: auto;
         margin-top: 15%;
     }    
-}
+} */

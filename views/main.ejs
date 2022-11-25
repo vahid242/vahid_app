@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <div id="pic">
-        <img src="img/neg.jpg" alt="image">
+<%- include('header'); -%>
+    <div id="introduce">
+        <h1>HI, I'M VAHID</h1>
+        <p id="job">I'M A Software Developer</p>
+        <a href='/about'><p id="learn">LEARN MORE</p></a>
     </div>
-    <div id="audio" align="center">
-        <audio controls autoplay>
-            <source src="audio/voice.aac" type="audio/acc">
-            <source src="audio/voice.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-    </div>
-</body>
-</html>
+<%- include('footer'); -%>
