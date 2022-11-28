@@ -116,7 +116,10 @@ ul {
 
 #contact{
   background-color: #02c9c9;
+  font-family: "Comic Sans MS";
+  color: white;
 }
+
 
 
 #contactBox{
@@ -149,6 +152,41 @@ ul {
   position: relative;
 }
 
+.columnContact {
+  float: left;
+  width: 45%;
+  padding: 15px;
+}
+
+.rowContact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input, textarea{
+  background-color:#02c9c9 ;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 8px;
+  /* box-sizing: border-box; */
+  width: 90%;
+  height: 25px;
+}
+
+#message{
+  height: 80px;
+}
+
+#submit{
+  width: 30%;
+}
+
+.columnContact a{
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:950px) {
@@ -172,6 +210,14 @@ ul {
 @media screen and (max-width:750px) {
   #introduce{
     font-size:200%;
+  }
+}
+
+@media screen and (max-width:450px) {
+  #contactBox{
+    border: 6px solid white;
+    margin: 0 8%;
+    position: relative;
   }
 }
 
