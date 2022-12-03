@@ -2,6 +2,11 @@ body{
     background-color: #ffc300;
 }
 
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url("comic-sans-ms/comici.ttf");
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -178,9 +183,6 @@ input, textarea{
   height: 80px;
 }
 
-#submit{
-  width: 30%;
-}
 
 .columnContact a{
   color:white;
@@ -188,7 +190,28 @@ input, textarea{
   font-weight: bold;
 }
 
+#submit{
+  background-color: #605f5f;
+  float: right;
+  margin-right: 20px;
+  width: 40%;
+  height: 40px;
+  font-size: 25px;
+  color: white;
+  
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+/* @media screen and (max-width:1090px) {
+  form{
+    margin-left: 20px ;
+  }
+  input, textarea{
+    width: 80%
+  }
+} */
+
 @media screen and (max-width:950px) {
   #introduce{
     font-size:3em;
@@ -205,19 +228,48 @@ input, textarea{
   .column {
     width: 100%;
   }
+
+  #submit{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width:750px) {
   #introduce{
     font-size:200%;
   }
+
+  #submit{
+    width: 70%;
+  }
 }
 
 @media screen and (max-width:450px) {
+  #introduce{
+    font-size:150%;
+  }
+
   #contactBox{
     border: 6px solid white;
     margin: 0 8%;
     position: relative;
+  }
+}
+
+@media screen and (max-width:350px) {
+  #introduce{
+    font-size:120%;
+  }
+
+  #contactBox{
+    border: 6px solid white;
+    margin: 0 3%;
+    position: relative;
+  }
+
+  #submit{
+    font-size: 15px;
+    width: 80%;
   }
 }
 
