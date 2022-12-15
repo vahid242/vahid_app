@@ -50,10 +50,7 @@ app.post('/send', (req, res) =>{
         service: 'gmail',
         auth: {
           user: 'reply.height@gmail.com',
-          pass: 'Myp@ss123',
-        },
-        tls:{
-            rejectUnauthorized:false
+          pass: 'ubwregaohzyljgqm',
         }
 
       });
@@ -70,7 +67,7 @@ app.post('/send', (req, res) =>{
             return console.log(error)
         }
         console.log('Massage send: %s', info.messageId);
-        console.log('Massage URL: %s', nodemailer.getTestMesageUrl(info));
+        // console.log('Massage URL: %s', nodemailer.getTestMessageUrl(info));
 
         res.render('contact', {msg:'EMAIL has been sent'})
       })
