@@ -31,7 +31,8 @@ app.get('/about', (req, res) =>{
 })
 
 app.get('/contact', (req, res) =>{
-    res.render('contact')
+  const contact = 'CONTACT ME';
+  res.render('contact', {contact: contact})
 })
 
 app.post('/send', (req, res) =>{
@@ -69,7 +70,9 @@ app.post('/send', (req, res) =>{
         console.log('Massage send: %s', info.messageId);
         // console.log('Massage URL: %s', nodemailer.getTestMessageUrl(info));
 
-        res.render('contact', {msg:'EMAIL has been sent'})
+        // res.render('contact', {msg:'EMAIL has been sent'})
+        const contact = 'Mail HAS BEEN SENT';
+        res.render('contact', {contact: contact})
       })
 })
 
